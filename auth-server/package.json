@@ -1,0 +1,17 @@
+{
+  "name": "little-scholar-admin-auth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/worker.mjs",
+    "build": "wrangler deploy --dry-run --outdir build",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "jose": "6.1.3"
+  },
+  "devDependencies": {
+    "wrangler": "4.80.0"
+  }
+}

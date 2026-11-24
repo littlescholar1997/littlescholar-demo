@@ -2,8 +2,10 @@
   "pages": [
     "about/index.html",
     "admin/decap.html",
+    "admin/demo.html",
     "admin/index.html",
     "admin/preview.html",
+    "admin/workspace.html",
     "contact/index.html",
     "courses/index.html",
     "index.html",

@@ -4,7 +4,7 @@
 
 ## 現在可以使用
 
-- `/admin/`：自訂中文內容工作台。包含消息與老師文章列表、搜尋、狀態篩選、新增、編輯、Markdown 內文、圖片上傳壓縮、沙盒預覽、本機儲存、JSON 匯入匯出、未儲存提醒。
+- `/admin/`：管理員登入入口，驗證服務尚待啟用；`/admin/demo.html`：自訂中文內容工作台試用。包含消息與老師文章列表、搜尋、狀態篩選、新增、編輯、Markdown 內文、圖片上傳壓縮、沙盒預覽、本機儲存、JSON 匯入匯出、未儲存提醒。
 - 學生見證：姓名、學歷、經歷、原文、照片、排序、狀態。
 - 彈出公告：標題、文字、圖片、按鈕、台灣時間起訖、每天／每次瀏覽／每次進入的頻率。第一階段編輯僅儲存在本機，前台已有消費正式設定的程式，但範例預設關閉。
 - 網站基本資料：電話、地址、營業時間。
@@ -19,7 +19,7 @@
 
 本機儲存只寫入目前來源網域的 localStorage，不會傳送內容至 GitHub，也不會同步至其他裝置。請用 JSON 匯出備份。上傳圖片先在瀏覽器轉成 WebP，隨草稿及備份保存；正式版應使用 Repo uploads 或獨立圖片服務。
 
-Decap 的 GitHub backend 設定已放在 `admin/config.yml`，但 OAuth 尚未配置，也未建立自動發布工作流。`admin/auth.json` 為停用狀態標記，不是登入保護。未在任何公開檔案放置密碼、Token 或 client secret。
+Decap 的 GitHub backend 設定已放在 `admin/config.yml`，但 OAuth 尚未配置，也未建立自動發布工作流。`admin/auth.json` 為停用狀態的公開入口設定，不是登入保護。新增的 auth-server Worker 會在伺服器驗證 Cloudflare Access JWT 與管理員名單；尚待部署與 Google OAuth 設定，步驟見 ADMIN-LOGIN.md。未在任何公開檔案放置密碼、Token 或 client secret。
 
 正式環境仍需：
 
