@@ -1,0 +1,3 @@
+'use strict';
+const tabs=[...document.querySelectorAll('.course-tab')],panels=[...document.querySelectorAll('.course-panel')];if(tabs.length){document.querySelector('.courses').classList.add('has-tabs');const select=i=>{tabs.forEach((t,j)=>{t.setAttribute('aria-selected',String(i===j));t.tabIndex=i===j?0:-1;panels[j].hidden=i!==j})};select(0);tabs.forEach((t,i)=>{t.onclick=()=>select(i);t.onkeydown=e=>{let n=i;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;else return;e.preventDefault();select(n);tabs[n].focus()}})}
+for(const a of document.querySelectorAll('a[href="#contact"]'))a.href='../#contact';

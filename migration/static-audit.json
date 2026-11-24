@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "about/index.html",
+    "admin/decap.html",
+    "admin/index.html",
+    "admin/preview.html",
+    "contact/index.html",
+    "courses/index.html",
+    "index.html",
+    "news/attention-and-habits.html",
+    "news/generation-z-english.html",
+    "news/high-school-2025.html",
+    "news/index.html",
+    "news/junior-summer-2025.html",
+    "news/level-1-summer-2025.html",
+    "news/student-works.html",
+    "news/summer-course-2026.html",
+    "preview.html",
+    "teacher/apps-and-english-learning.html",
+    "teacher/exam-reading-literacy.html",
+    "teacher/index.html",
+    "voices/index.html"
+  ],
+  "issues": []
+}
